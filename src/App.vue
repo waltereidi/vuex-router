@@ -6,7 +6,7 @@ export default {
     return {
       nome: '',
       idade: 0,
-      param: 'EmbComponents',
+      param: 'EmbComponent',
     }
 
   },
@@ -24,7 +24,7 @@ export default {
 <template>
   <header>
     <div class="wrapper">
-
+      <!-- O router pode ser configurado com parametros e na configuração do router pode ter varios componentes para serem modificados junto com as variaveis. -->
       <nav>
         <RouterLink to="/Pagina">pagina</RouterLink>
         <RouterLink to="/Pagina2" name="EmbComponent">pagina2 </RouterLink>
@@ -36,7 +36,7 @@ export default {
   <router-view class="view embComponent" :name="param"></router-view>
   {{ nome }} {{ idade }}
 
-  <button @click="param = 'pagina2'">Botao</button>
+  <button @click="param = 'EmbComponent2'">Botao</button>
 </template>
 
 <style scoped></style>

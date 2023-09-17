@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Pagina2 from "@/views/Pagina2.vue";
 import EmbComponent from "@/views/EmbComponent.vue";
+import EmbComponent2 from "@/views/EmbComponent2.vue";
 
 
 const router = createRouter({
@@ -20,7 +21,8 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       components: {
         default: Pagina2, 
-        EmbComponent
+        EmbComponent,
+        EmbComponent2
       }
     },
     {
